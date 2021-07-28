@@ -1,0 +1,103 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: all 0.3s linear;
+  display: flex;
+}
+.sidebar__hide {
+  transition: all 0.3s linear;
+}
+.sidebar__hide {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  transform: translateX(-150vw);
+}
+
+.sidebar__elements {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem 0.5rem 2rem;
+  color: rgb(223, 222, 222);
+}
+.sidebar__elements:hover {
+  background-color: rgb(61, 60, 60);
+}
+.sidebar__title {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 0rem 1rem 0rem 1.5rem;
+  font-size: 15px;
+  font-weight: 500;
+}
+.sidebar__heading {
+  display: flex;
+  height: 50px;
+  position: fixed;
+  width: 240px;
+  z-index: 100;
+  background-color: rgb(31, 30, 30);
+  border-bottom-width: 1px;
+  border-bottom-color: rgb(105, 105, 105);
+  border-bottom-style: solid;
+}
+.sidebar__icon {
+  margin-top: 0.2rem;
+}
+.sidebar__menu {
+  padding: 1rem 2rem 0.5rem 2em;
+}
+.usnused {
+  width: 3rem;
+  background-color: white;
+}
+.sidebar__list {
+  background-color: rgb(31, 30, 30);
+  width: 240px;
+  position: fixed;
+  top: 0;
+  margin-bottom: 4rem;
+  padding-bottom: 4rem;
+  overflow-y: auto;
+}
+
+.sidebar__info {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 15px;
+}
+.sidebar__paras {
+  margin: 0rem 2rem;
+}
+.firstInfo {
+  margin-top: 1rem;
+}
+.license {
+  color: gray;
+}
+.sidebar__logo {
+  width: 120px;
+  height: 120px;
+  margin: -32px -10px;
+}
+.horizon > hr {
+  border: 1px solid rgb(68, 68, 68);
+}
+.more {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 1rem 1rem 1rem 2rem;
+}
+@media (max-width: 469px) {
+  .sidebar__hide {
+    transform: translateX(-180vw);
+  }
+  .sidebar__paras,
+  .sidebar__title {
+    font-size: small;
+  }
+}

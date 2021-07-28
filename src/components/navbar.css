@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+:root {
+  color: white;
+}
+.content {
+  background-color: rgb(37, 37, 37);
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  overflow: hidden;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0rem 1rem 0.7rem 1rem;
+  padding-top: 0.7rem;
+  position: sticky;
+}
+.navbar__search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+}
+input[type="text"] {
+  padding-left: 0.5rem;
+  font-size: 1.1rem;
+  height: 32px;
+  width: 20vw;
+  max-width: 700px;
+  background-color: black;
+  color: white;
+  border: 0;
+  position: relative;
+  bottom: 12px;
+}
+input[type="text"]:focus {
+  outline: none;
+  border: 1px solid navy;
+}
+
+::placeholder {
+  padding-left: 0.1rem;
+  font-size: 1.1rem;
+}
+.navbar__searchicon {
+  background-color: rgb(75, 74, 74);
+  height: 30px !important;
+  width: 35px !important;
+  padding: 2px 2px;
+  color: gray;
+  position: relative;
+  bottom: 2px;
+}
+.navbar__icons {
+  display: flex;
+  align-items: center;
+}
+.navbar__menu {
+  color: var(--color);
+  margin-left: 5px;
+}
+.navbar__logo {
+  width: 120px;
+  height: 120px;
+  margin: -50px 10px -50px 10px;
+}
+.navbar__profile {
+  display: flex;
+  align-items: center;
+}
+.content {
+  position: sticky;
+}
+.navbar__profile > div {
+  margin-left: 0.5rem;
+}
+.navbar__profile > div > img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.cards {
+  display: flex;
+  overflow-x: hidden;
+  padding: 0.7rem 0.5rem;
+}
+.cards > div {
+  margin: 0rem 0.5rem;
+  background-color: rgb(59, 59, 59);
+  padding: 0.3rem 1rem 0.5rem 1rem;
+  border-radius: 1rem;
+  font-size: 0.9rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#All {
+  background-color: white;
+  color: black;
+  margin-left: 1rem;
+}
+.comedy,
+.movie,
+.stock,
+.wordPress,
+.TVF,
+.clever,
+.tsp {
+  display: none;
+}
+article {
+  display: flex;
+}
+header {
+  display: flex;
+  flex-direction: column;
+}
+.arrowfor {
+  position: absolute !important;
+  top: 4.5rem;
+  right: 1rem;
+  width: 1rem !important;
+}
+
+.content > hr {
+  border: 1px solid rgb(78, 77, 77);
+  width: 100%;
+}
+.extraSearch {
+  display: none;
+}
+
+@media (max-width: 490px) {
+  .extraSearch {
+    display: block;
+  }
+  .topics {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar__menu {
+    width: 20px !important;
+  }
+  .navbar__logo {
+    width: 100px;
+    height: 100px;
+    margin: -50px 8px -50px 8px;
+  }
+  .navbar__searchicon {
+    display: none !important;
+  }
+  .searchBar {
+    display: none;
+  }
+  .miniSearch {
+    margin-top: 10px;
+    width: 230px !important;
+  }
+  .python {
+    display: none;
+  }
+  .navbar__avatar {
+    display: none;
+  }
+  .navbar__searchicon2 {
+    background-color: rgb(78, 78, 78) !important;
+    width: 30px !important;
+    height: 30px !important;
+    position: relative;
+    top: 0.4rem;
+    color: white !important;
+  }
+  .arrowfor {
+    top: 6.8rem;
+    right: 2px;
+  }
+  .navbar__logo {
+    margin: -50px 1px -50px 1px;
+  }
+}
+@media (min-width: 590px) {
+  input[type="text"] {
+    width: 30vw;
+  }
+
+  .navbar {
+    padding: 0.7rem 0.5rem 0rem 0.5rem;
+  }
+  .bellIcon,
+  .videoIcon {
+    display: none;
+  }
+  .navbar__menu {
+    margin-left: -0.4rem;
+  }
+}
+input[type="text"] {
+  position: relative;
+  bottom: 4px;
+}
+.navbar__avatar {
+  display: block;
+}
+.navbar__searchicon {
+  top: 5.5px;
+}
+
+@media (min-width: 650px) {
+  input[type="text"] {
+    width: 30vw;
+  }
+  input[type="text"] {
+    position: relative;
+    bottom: 10px;
+  }
+  .navbar__searchicon {
+    top: 0px;
+    bottom: 6px;
+  }
+
+  .bellIcon,
+  .appsIcon,
+  .videoIcon {
+    display: block;
+  }
+
+  .navbar__search {
+    display: block;
+  }
+
+  .comedy,
+  .movie,
+  .stock {
+    display: block;
+  }
+}
+@media (min-width: 700px) {
+  .tsp {
+    display: block;
+  }
+}
+@media (min-width: 968px) {
+  input[type="text"] {
+    width: 45vw;
+  }
+
+  .navbar {
+    margin: 0rem 4rem 0.7rem 1rem;
+  }
+  .navbar__profile > div {
+    margin-left: 1rem;
+  }
+  .navbar__profile {
+    margin-left: 2rem;
+  }
+  .wordPress,
+  .TVF {
+    display: block;
+  }
+}
+@media (min-width: 1168px) {
+  .clever {
+    display: block;
+  }
+}
