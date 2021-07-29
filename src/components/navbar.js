@@ -19,7 +19,9 @@ const Navbar = () => {
       <main className="navbar">
         <section className="navbar__icons">
           <MenuIcon className="navbar__menu" onClick={showSidebar} />
-          <img src={logo} alt="" className="navbar__logo" />
+          <Link to="/">
+            <img src={logo} alt="" className="navbar__logo" />
+          </Link>
         </section>
         <form className="navbar__search">
           <div className="navbar__input">

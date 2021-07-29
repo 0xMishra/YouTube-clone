@@ -10,9 +10,9 @@ const Recommended = () => {
   return (
     <>
       <h3 className="recommended__heading">
-        " type something in the search box and press the search icon"{" "}
+        " type something in the search box and press the search icon"
       </h3>
-      <a href="">
+      <a href="https://github.com/mishra811/YouTube-clone" target="_blank">
         <h3 className="author">--Kundan Mishra</h3>
       </a>
       <div className="recommendations" onClick={hideSidebar}>
