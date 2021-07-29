@@ -2,11 +2,11 @@ import React from "react";
 import { useState } from "react";
 import { useContext } from "react";
 import { useEffect } from "react";
+import { suggest } from "./data";
 const YouTube = require("simple-youtube-api");
-
 const AppContext = React.createContext();
 const AppProvider = ({ children }) => {
-  const [items, setItems] = useState([]);
+  const [items, setItems] = useState(suggest);
   const [isSidebarShow, setIsSidebarShow] = useState(false);
   const [searchValue, setSearchValue] = useState("");
   const [searchItem, setSearchItem] = useState(searchValue);

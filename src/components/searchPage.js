@@ -33,7 +33,7 @@ const SearchPage = () => {
           })}
         </div>
       ) : (
-        <h1>Type something in search box</h1>
+        <h1 className="error">Type something in search box</h1>
       )}
     </main>
   );
@@ -59,7 +59,9 @@ const SearchElements = ({ thumbnails, channel, title, description }) => {
               <p className="views_on_video">
                 {views}
                 {views <= 2 ? "M" : "K"} views
-                <span>{channel.raw.snippet.publishedAt}</span>
+                <span className="uploadTime">
+                  {channel.raw.snippet.publishedAt}
+                </span>
               </p>
             </article>
             <div className="video_dsc">{description}</div>

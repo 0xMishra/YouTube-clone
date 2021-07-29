@@ -62,7 +62,8 @@
   top: 0;
   margin-bottom: 4rem;
   padding-bottom: 4rem;
-  overflow-y: auto;
+  height: 100vh;
+  overflow-y: hidden;
 }
 
 .sidebar__info {
